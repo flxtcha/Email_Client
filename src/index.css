@@ -1,0 +1,120 @@
+@import 'antd/dist/antd.css';
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+p{
+  font-size: 16px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #8686cd;
+}
+.Nav{
+  width: 5vw;
+  height: 98%; 
+  display: flex;
+  flex-direction: column;
+  color: #7576b8;  
+  font-size: 32px;
+}
+.LeftSide{
+  width: 31.75vw;
+  height: 98%;
+  background-color: #40407d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em; 
+}
+.message{
+  display: flex;
+  width: 80%;
+  height: 12%;
+  background-color: #323268;
+  align-items: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  transition: background-color 500ms;
+  -webkit-transition: background-color 500ms;
+  -moz-transition: background-color 500ms;
+  -ms-transition: background-color 500ms;
+  -o-transition: background-color 500ms;
+}
+.message:hover{
+  background-color: #5657a4; 
+}
+.RightSide{
+  width: 61.25vw;
+  height: 98%;
+  background-color: #f9f8ff;
+  display: flex;
+  padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Tiles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  transition: background-color 500ms;
+  -webkit-transition: background-color 500ms;
+  -moz-transition: background-color 500ms;
+  -ms-transition: background-color 500ms;
+  -o-transition: background-color 500ms;
+  background-color: #3a3972;
+  height: 100%
+}
+.Tiles:hover {
+
+  background-color: rgba(86,87,164,255);
+}
+#TopLeft{
+  border-top-left-radius: 5%;
+}
+#settings{
+  margin-top: auto;
+  background-color: #323268;
+  border-bottom-left-radius: 5%;
+}
+#search{
+  width: 80%;
+  height: 4%;
+  margin-top: 2em;
+}
+#search *{
+  background-color: #3a3974;
+  border: none;
+  color: #4c4c85; 
+}
+#search ::placeholder{
+  color: #4c4c85; 
+}
+#inbox{
+  align-self: flex-start;
+  padding-left: 10%;
+  padding-top: 5%;
+  color: #fff; 
+}
+#inbox a{
+  color: #fff; 
+}
